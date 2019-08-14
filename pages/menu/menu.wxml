@@ -1,0 +1,15 @@
+<!--pages/menu/menu.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="355" height="150" mode="aspectFit" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view wx:for="{{optionurls}}" wx:key="*this" class="foodoption" bindtap="skip" data-type="{{item.kind}}">
+  <text>{{item.name}}</text>
+  <image src="{{item.url}}" class="foodlegend"></image>
+</view>

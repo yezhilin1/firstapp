@@ -1,0 +1,19 @@
+<!--pages/menu/detailedfood.wxml-->
+<view class="follower">
+  <view class="headarea">
+    <text>{{name}}</text>
+  </view>
+  <view wx:for="{{list}}" wx:key="*this" class="goodsarea">
+    <image src="{{item.url}}" class=""></image>
+    <text class="foodname">{{item.name}}</text>
+    <view class="number">
+      <button bindtap="click1">
+        <image src="../../image/bar/1.jpg"></image>
+      </button>
+      <text>{{item.num}}</text>
+      <button bindtap="click2">
+        <image src="../../image/bar/1.jpg"></image>
+      </button>
+    </view>
+  </view>
+</view>
