@@ -8,7 +8,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#D53E37",
-    "navigationBarTitleText": "点餐",
+    "navigationBarTitleText": "点餐平台",
     "navigationBarTextStyle": "white"
   },
   "tabbar": {
@@ -19,20 +19,20 @@
       {
         "pagePath": "pages/menu/menu",
         "text": "点餐",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "../iamge/bar/1.jpg",
+        "selectedIconPath": "../iamge/bar/1.jpg"
       },
       {
         "pagePath": "pages/record/record",
         "text": "订单",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "../iamge/bar/1.jpg",
+        "selectedIconPath": "../iamge/bar/1.jpg"
       },
       {
         "pagePath": "pages/shopcart/shopcart",
         "text": "购物车",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "../iamge/bar/1.jpg",
+        "selectedIconPath": "../iamge/bar/1.jpg"
       }
     ]
   },
