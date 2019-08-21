@@ -1,1 +1,36 @@
 /* pages/menu/menu.wxss */
+.page{
+  margin: 0;
+  padding: 0;
+  
+}
+.swip{
+  height: 150px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.foodoption{
+  height: 100px;
+  width: 100%;
+  margin:10px 0;
+  background-color:azure;
+}
+.foodoption text{
+  height: 50%;
+  width:50px;
+  font-size: 25px;
+  color:orangered;
+  float: left;
+  position: relative;
+  top:30px;
+  left: 30px;
+}
+.foodoption image{
+  height: 100%;
+  width: 100px;
+  float: right;
+  position: relative;
+  right: 5px;
+}

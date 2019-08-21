@@ -1,2 +1,10 @@
 <!--pages/record/record.wxml-->
-<text>pages/record/record.wxml</text>
+<view class="headarea">
+    <text>{{record}}</text>
+</view>
+
+<view wx:for="{{orderList}}" wx:key="*this" class="historyoption" bindtap="clickopen" data-item="{{item}}">
+<text class="time">{{item.time}}的订单</text>
+<text class="price">￥{{item.totalprice}}</text>
+<text class="tips">点击查看详情</text>
+</view>

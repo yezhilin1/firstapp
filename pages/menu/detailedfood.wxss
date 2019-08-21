@@ -1,1 +1,64 @@
 /* pages/menu/detailedfood.wxss */
+.headarea{
+  height: 40px;
+  width: 100%;
+  background-color:darkorange;
+}
+.headarea text{
+  font-size: 25px;
+  color:crimson;
+  position: relative;
+  left: 40%;
+}
+.goodsarea{
+  height: 160px;
+  width: 120px;
+  margin: 20px;
+  float: left;
+}
+.foodimg{
+  height: 120px;
+  width: 120px;
+  float: left;
+}
+.foodname{
+  height:20px;
+  width: 120px;
+  float: left;
+  text-align: center;
+}
+.number{
+  height: 20px;
+  width: 120px;
+  float: left;
+  position: relative;
+  left: 13px;
+}
+.number button{
+  height: 20px;
+  width: 30px;
+  float: left;
+}
+.number text{
+  height: 20px;
+  width: 30px;
+  float: left;
+  position: relative;
+  left: 10px;
+}
+.gopay{
+  height: 30px;
+  width: 70px;
+  padding: 0;
+  text-align: center;
+  background-color:dodgerblue;
+  float: right;
+  position: relative;
+  right: 10px;
+}
+.gopay text{
+  margin: 0px;
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}

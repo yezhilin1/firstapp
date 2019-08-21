@@ -1,1 +1,71 @@
 /* pages/shopcart/shopcart.wxss */
+.headarea{
+  height: 40px;
+  width: 100%;
+  background-color:darkorange;
+}
+.headarea text{
+  font-size: 25px;
+  color:crimson;
+  position: relative;
+  left: 40%;
+}
+.tips{
+  height: 40px;
+  width: 100%;
+}
+.tips text{
+  font-size: 20px;
+  color: lightsalmon;
+  float: left;
+}
+.foodarea{
+  height: 60px;
+  width: 100%;
+  margin: 5px 0;
+  text-align: center;
+  background-color: azure;
+}
+.foodarea image{
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  float: left;
+}
+.name{
+  font-size: 15px;
+  float: left;
+  margin: 20px;
+}
+.val{
+  font-size: 15px;
+  float: left;
+  margin: 20px;
+}
+.num{
+  font-size: 15px;
+  float: right;
+  margin: 20px;
+}
+.totalprice{
+  font-size: 15px;
+  float: right;
+  margin: 20px;
+  background-color:coral;
+}
+
+.pay button{
+  height: 30px;
+  width: 100%;
+  background-color:dodgerblue;
+  float: right;
+  position: fixed;
+  bottom: 0px;
+  margin-bottom:5px;
+}
+.pay text{
+  margin: 0px;
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}

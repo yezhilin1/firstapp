@@ -1,0 +1,35 @@
+/* pages/record/detailrecord.wxss */
+.foodarea{
+  height: 60px;
+  width: 100%;
+  margin: 5px 0;
+  text-align: center;
+  background-color: azure;
+}
+.foodarea image{
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  float: left;
+}
+.name{
+  font-size: 15px;
+  float: left;
+  margin: 20px;
+}
+.val{
+  font-size: 15px;
+  float: left;
+  margin: 20px;
+}
+.num{
+  font-size: 15px;
+  float: right;
+  margin: 20px;
+}
+.totalprice{
+  font-size: 15px;
+  float: right;
+  margin: 20px;
+  background-color:coral;
+}

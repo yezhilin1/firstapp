@@ -1,19 +1,21 @@
-// pages/record/record.js
+// pages/record/detailrecord.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    record:"订单历史",
-    orderList:[]
+    list:[],
+    totalprice:0,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getTime();
+    this.initData(options.id);
+    
+    
   },
 
   /**
@@ -64,25 +66,17 @@ Page({
   onShareAppMessage: function () {
 
   },
-  getTime(){
-    
-    let orderList = wx.getStorageSync('orderList') || [];
-    this.setData({
-      orderList
-    })
-    
-  },
-  clickopen(e){
-    debugger;
-    let clickid = e.currentTarget.dataset.item.id;
-    
-    // wx.switchTab({
-    //   url: `/pages/record/detailedrecord?id=${clickid}`,
-
-    // })
-
-    wx.navigateTo({
-      url: `/pages/record/detailrecord?id=${clickid}`,
-    })
+  initData(id) {
+    let orderObject = wx.getStorageSync('orderList');
+    for (let i = 0,len = orderObject.length;i<len;i++){
+      if (id == orderObject[i].id){
+        this.setData({
+          list: orderObject[i].foods,
+          totalprice: orderObject[i].totalprice
+        })
+      }
+    }
+   
   }
+  
 })

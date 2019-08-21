@@ -4,21 +4,18 @@ Page({
   /**
    * 页面的初始数据
    */
-  click1: function () { },
+  
 
   data: {
     imgUrls: [
       {
-        link: '/pages/index/index',
+        link: '/pages/menu/menu',
         url: '../../image/bar/1.jpg'
       }, {
-        link: '/pages/logs/logs',
+        link: '/pages/menu/menu',
         url: '../../image/bar/1.jpg'
       }, {
-        link: '/pages/index/index',
-        url: '../../image/bar/1.jpg'
-      }, {
-        link: '/pages/index/index',
+        link: '/pages/menu/menu',
         url: '../../image/bar/1.jpg'
       }
     ],
@@ -106,7 +103,7 @@ Page({
   },
 
   skip(e) {
-    debugger;
+    
     let kind = e.currentTarget.dataset.type;
     wx.navigateTo({
       url: `/pages/menu/detailedfood?id=${kind}`,

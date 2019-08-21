@@ -3,7 +3,8 @@
     "pages/menu/menu",
     "pages/record/record",
     "pages/shopcart/shopcart",
-    "pages/menu/detailedfood"
+    "pages/menu/detailedfood",
+    "pages/record/detailrecord"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,7 +12,7 @@
     "navigationBarTitleText": "点餐平台",
     "navigationBarTextStyle": "white"
   },
-  "tabbar": {
+  "tabBar": {
     "selectedColor": "#D53E37",
     "backgroundColor": "#f5f5f5",
     "borderStyle": "white",
@@ -19,22 +20,22 @@
       {
         "pagePath": "pages/menu/menu",
         "text": "点餐",
-        "iconPath": "../iamge/bar/1.jpg",
-        "selectedIconPath": "../iamge/bar/1.jpg"
+        "iconPath": "./image/bar/2.png",
+        "selectedIconPath": "./image/bar/2.png"
       },
       {
         "pagePath": "pages/record/record",
         "text": "订单",
-        "iconPath": "../iamge/bar/1.jpg",
-        "selectedIconPath": "../iamge/bar/1.jpg"
+        "iconPath": "./image/bar/2.png",
+        "selectedIconPath": "./image/bar/2.png"
       },
       {
         "pagePath": "pages/shopcart/shopcart",
         "text": "购物车",
-        "iconPath": "../iamge/bar/1.jpg",
-        "selectedIconPath": "../iamge/bar/1.jpg"
+        "iconPath": "./image/bar/2.png",
+        "selectedIconPath": "./image/bar/2.png"
       }
     ]
   },
-  "sitemapLocation": "sitemap18.json"
+  "sitemapLocation": "sitemap54.json"
 }

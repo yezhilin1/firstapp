@@ -4,16 +4,17 @@
     <text>{{name}}</text>
   </view>
   <view wx:for="{{list}}" wx:key="*this" class="goodsarea">
-    <image src="{{item.url}}" class=""></image>
-    <text class="foodname">{{item.name}}</text>
+    <image src="{{item.url}}" class="foodimg"></image>
+    <text class="foodname">{{item.name}},￥{{item.val}}</text>
     <view class="number">
-      <button bindtap="click1">
+      <button bindtap="minusClick" data-item="{{item}}">
         <image src="../../image/bar/1.jpg"></image>
       </button>
       <text>{{item.num}}</text>
-      <button bindtap="click2">
+      <button bindtap="plusClick" data-item="{{item}}">
         <image src="../../image/bar/1.jpg"></image>
       </button>
     </view>
   </view>
+  <view bindtap="jumpshopcart" ><button class="gopay"><text>{{gopay}}</text></button></view>
 </view>
