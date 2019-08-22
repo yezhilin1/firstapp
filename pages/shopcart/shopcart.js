@@ -8,10 +8,10 @@ Page({
   data: {
     shoppingcart: "购物车",
     tips: "你的订单为",
-    nofood: true,
+    
     totalprice: 0,
     pay: "支付",
-    nothing: "你的购物车空空如也",
+    
     list: []
   },
 
@@ -19,10 +19,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.initData();
-    this.checkfood();
-    this.valuation();
-
   },
 
   /**
@@ -35,7 +31,11 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {},
+  onShow: function() {
+    
+    this.initData();
+    this.valuation();
+  },
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -72,22 +72,13 @@ Page({
 
   },
   initData() {
+    
     let shopcart = wx.getStorageSync('shopcart') || [];
     this.setData({
       list: shopcart
     })
   },
-  checkfood() {
-    let arr = this.data.list;
-    if (arr == null)
-      this.setData({
-        nofood: true
-      })
-    else
-      this.setData({
-        nofood: false
-      })
-  },
+  
   valuation() {
     let totalPrice = 0;
     let foodList = this.data.list;
@@ -100,6 +91,20 @@ Page({
     })
   },
   pay() {
+    wx.showModal({
+      title: '支付提示',
+      content: '是否支付当前订单',
+      success: (res) => {
+        if (res.confirm) {
+          console.log('支付成功');
+          this.doPay();
+        } else if (res.cancel) {
+          console.log('取消支付');
+        }
+      }
+    })
+  },
+  doPay(){
     let orderList = wx.getStorageSync('orderList') || [];
     let time = util.formatTime(new Date());
     let order = {
@@ -113,6 +118,9 @@ Page({
       key: "orderList",
       data: orderList
     })
-
+    wx.removeStorage({
+      key: 'shopcart'
+    })
+    this.onShow();
   }
 })

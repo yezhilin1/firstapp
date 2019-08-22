@@ -8,3 +8,6 @@
 <text class="price">￥{{item.totalprice}}</text>
 <text class="tips">点击查看详情</text>
 </view>
+<view class="delete" bindtap="delete">
+  <button><text>{{deleterecord}}</text></button>
+</view>

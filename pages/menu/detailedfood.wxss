@@ -35,10 +35,13 @@
   left: 13px;
 }
 .number button{
-  height: 20px;
+  height: 30px;
   width: 30px;
   float: left;
+  padding: 0;
+  border: none;
 }
+
 .number text{
   height: 20px;
   width: 30px;
@@ -46,6 +49,7 @@
   position: relative;
   left: 10px;
 }
+
 .gopay{
   height: 30px;
   width: 70px;

@@ -10,27 +10,27 @@ Page({
     imgUrls: [
       {
         link: '/pages/menu/menu',
-        url: '../../image/bar/1.jpg'
+        url: '../../image/bar/海报7.jpg'
       }, {
         link: '/pages/menu/menu',
-        url: '../../image/bar/1.jpg'
+        url: '../../image/bar/海报5.jpg'
       }, {
         link: '/pages/menu/menu',
-        url: '../../image/bar/1.jpg'
+        url: '../../image/bar/海报8.jpg'
       }
     ],
     optionurls: [
       {
         name: '汉堡',
-        url: '../../image/bar/1.jpg',
+        url: '../../image/bar/汉堡.jpg',
         kind: 'ham'
       }, {
-        name: '鸡肉',
-        url: '../../image/bar/1.jpg',
+        name: '炸鸡',
+        url: '../../image/bar/炸鸡.jpg',
         kind: 'ch'
       }, {
         name: '冷饮',
-        url: '../../image/bar/1.jpg',
+        url: '../../image/bar/冷饮.jpg',
         kind: 'dr'
       }
 

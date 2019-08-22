@@ -19,21 +19,21 @@
     "list": [
       {
         "pagePath": "pages/menu/menu",
-        "text": "点餐",
-        "iconPath": "./image/bar/2.png",
-        "selectedIconPath": "./image/bar/2.png"
+        "text": "首页",
+        "iconPath": "./image/bar/首页.png",
+        "selectedIconPath": "./image/bar/首页.png"
       },
       {
         "pagePath": "pages/record/record",
         "text": "订单",
-        "iconPath": "./image/bar/2.png",
-        "selectedIconPath": "./image/bar/2.png"
+        "iconPath": "./image/bar/订单.png",
+        "selectedIconPath": "./image/bar/订单.png"
       },
       {
         "pagePath": "pages/shopcart/shopcart",
         "text": "购物车",
-        "iconPath": "./image/bar/2.png",
-        "selectedIconPath": "./image/bar/2.png"
+        "iconPath": "./image/bar/购物.png",
+        "selectedIconPath": "./image/bar/购物.png"
       }
     ]
   },

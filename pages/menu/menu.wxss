@@ -5,10 +5,28 @@
   
 }
 .swip{
-  height: 150px;
+  height: 230px;
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: antiquewhite;
+}
+.swip block{
+  margin: 0;
+  padding: 0;
+}
+.swip swiper-item{
+  margin: 0;
+  padding: 0;
+}
+.swip navigator{
+  margin: 0;
+  padding: 0;
+}
+.slide-image{
+ margin: 0px;
+ padding: 0px;
+ 
 }
 
 .foodoption{

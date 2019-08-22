@@ -6,6 +6,7 @@ Page({
    */
   data: {
     record:"订单历史",
+    deleterecord:"删除全部记录",
     orderList:[]
   },
 
@@ -13,7 +14,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getTime();
   },
 
   /**
@@ -27,7 +27,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getTime();
   },
 
   /**
@@ -73,7 +73,7 @@ Page({
     
   },
   clickopen(e){
-    debugger;
+    
     let clickid = e.currentTarget.dataset.item.id;
     
     // wx.switchTab({
@@ -84,5 +84,11 @@ Page({
     wx.navigateTo({
       url: `/pages/record/detailrecord?id=${clickid}`,
     })
+  },
+  delete(){
+    wx.removeStorage({
+      key: 'orderList'
+    })
+    this.onShow();
   }
 })

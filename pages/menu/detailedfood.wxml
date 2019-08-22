@@ -7,12 +7,12 @@
     <image src="{{item.url}}" class="foodimg"></image>
     <text class="foodname">{{item.name}},￥{{item.val}}</text>
     <view class="number">
-      <button bindtap="minusClick" data-item="{{item}}">
-        <image src="../../image/bar/1.jpg"></image>
+      <button bindtap="minusClick" data-item="{{item}}" class="minusbutton" >
+        <image src="../../image/bar/minuscircle.png" mode='widthFix'></image>
       </button>
       <text>{{item.num}}</text>
-      <button bindtap="plusClick" data-item="{{item}}">
-        <image src="../../image/bar/1.jpg"></image>
+      <button bindtap="plusClick" data-item="{{item}}" class="plusbutton" >
+        <image src="../../image/bar/pluscircle.png" mode='widthFix'></image>
       </button>
     </view>
   </view>

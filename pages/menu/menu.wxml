@@ -3,7 +3,7 @@
   <block wx:for="{{imgUrls}}" wx:key="*this">
     <swiper-item>
       <navigator url="{{item.link}}" hover-class="navigator-hover">
-        <image src="{{item.url}}" class="slide-image" width="100%" height="100%" mode="aspectFit" />
+        <image src="{{item.url}}" class="slide-image"  mode="aspectFit" />
       </navigator>
     </swiper-item>
   </block>

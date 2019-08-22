@@ -76,34 +76,32 @@ Page({
           list: [{
             totalOrder: 0,
             order: 0,
-            hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
+            url: "../../image/bar/脆鸡堡.jfif",
+            name: "脆鸡堡",
             val: 6,
             num: 0
           }, {
             totalOrder: 1,
             order: 1,
-            hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
+            url: "../../image/bar/培根鸡蛋堡.jfif",
+            name: "培根鸡蛋堡",
             val: 6,
             num: 0
           }, {
             totalOrder: 2,
             order: 2,
             hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
-            val: 6,
+            url: "../../image/bar/芝士牛肉堡.jfif",
+            name: "芝士牛肉堡",
+            val: 8,
             num: 0
           }, {
             totalOrder: 3,
             order: 3,
             hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
-            val: 6,
+            url: "../../image/bar/鳕鱼堡.jfif",
+            name: "鳕鱼堡",
+            val: 12,
             num: 0
           }
           ]
@@ -111,37 +109,37 @@ Page({
         break;
       case "ch":
         this.setData({
-          name: "汉堡",
+          name: "炸鸡",
           list: [{
             totalOrder: 4,
             order: 0,
             hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
+            url: "../../image/bar/鸡米花.jpg",
+            name: "鸡米花",
             val: 6,
             num: 0
           }, {
             totalOrder: 5,
             order: 1,
             hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
-            val: 6,
+            url: "../../image/bar/炸鸡腿.jpg",
+            name: "炸鸡腿",
+            val: 8,
             num: 0
           }, {
             totalOrder: 6,
             order: 2,
             hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
+            url: "../../image/bar/炸鸡翅.jpg",
+            name: "炸鸡翅",
             num: 0
           }, {
             totalOrder: 7,
             order: 3,
             hasnum: true,
-            url: "../../image/bar/1.jpg",
-            name: "鸡排汉堡",
-            val: 6,
+            url: "../../image/bar/蜜汁扒鸡.jfif",
+            name: "蜜汁扒鸡",
+            val: 18,
             num: 0
           }
           ]
@@ -155,32 +153,32 @@ Page({
               totalOrder: 8,
               order: 0,
               hasnum: true,
-              url: "../../image/bar/1.jpg",
-              name: "鸡排汉堡",
+              url: "../../image/bar/可乐.jpg",
+              name: "可乐",
               val: 6,
               num: 0
             }, {
               totalOrder: 9,
               order: 1,
               hasnum: true,
-              url: "../../image/bar/1.jpg",
-              name: "鸡排汉堡",
+              url: "../../image/bar/橙汁.jpg",
+              name: "橙汁",
               val: 6,
               num: 0
             }, {
               totalOrder: 10,
               order: 2,
               hasnum: true,
-              url: "../../image/bar/1.jpg",
-              name: "鸡排汉堡",
-              val: 6,
+              url: "../../image/bar/珍珠奶茶.jpg",
+              name: "珍珠奶茶",
+              val: 12,
               num: 0
             }, {
               totalOrder: 11,
               order: 3,
               hasnum: true,
-              url: "../../image/bar/1.jpg",
-              name: "鸡排汉堡",
+              url: "../../image/bar/拿铁咖啡.jpg",
+              name: "拿铁咖啡",
               val: 6,
               num: 0
             }
